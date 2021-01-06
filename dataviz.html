@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<!--
+	Aide mémoire dans un but professionnel et personnel
+	TITEUXMA.github.io
+
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dataviz - Aide mémoire - Pro/Perso</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+								</header>
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1>Dataviz</h1>
+											<p>Tutoriels d'appréhension à la dataviz</p>
+										</header>
+								</section>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<ol>
+											<li>
+												<ol>
+													<a href="#qlikview">QLIKVIEW</a>
+													<li><a href="#qlikcreerapp">Créer une application</a></li>
+													<ol>
+														<li><a href="#qlikarborescence">Arborescence des dossiers</a></li>
+														<li><a href="#qlikappli">Création de l'application</a></li>
+													</ol>
+													<li><a href="#qlikchargerbase">Charger une base</a></li>
+													<ol>
+														<li><a href="#qlikediteur">L'éditeur de script et son interface d'importation</a></li>
+														<li><a href="#qlikvisionneur">Le visionneur de table</a></li>
+													</ol>
+													<li><a href="#qlikcreerobjet">Créer un objet</a></li>
+													<ol>
+														<li><a href="#qlikobjets">Objets texte, image et graphique</a></li>
+														<li><a href="#qlikvisionneur">Faire un comptage : connaître SQL</a></li>
+														<li><a href="#qlikfiltrer">Filtrer les données</a></li>
+															<ol>
+																<li><a href="#qlikselection">Les listes de sélection</a></li>
+																<li><a href="#qliknomobj">Nom de l'objet</a></li>
+																<li><a href="#qlikconteneur">Conteneur</a></li>
+															</ol>
+													</ol>
+													<li><a href="#qlikfonction">Fonctions complexes : set analysis</a></li>
+													<li><a href="#qlikformenombres">Mise en forme des nombres : fonction "num()"</a></li>
+													<li><a href="#qlikappler">Appeler une variable calculée</a></li>
+													<li><a href="#qlikdynamiser">Dynamiser les sources, dimensions et expressions calculées</a></li>
+													<ol>
+														<li><a href="#qlikretoursource">Retour sur la source des données</a></li>
+														<li><a href="#qliktablevar">Créer une table de variables calculées</a></li>
+													</ol>
+													<li><a href="#qliktempo">Gérer la temporalité : Master Calendar</a></li>
+													<li><a href="#qlikdimensions">Application à plusieurs dimensions de sélections : États alternatifs</a></li>
+													<li><a href="#qliksense">Qlik Sense</a></li>
+												</ol>
+											</li>
+											<li>
+												<ol><a href="#autre">AUTRE?</a>
+													<li><a href="#autre"></a></li>
+												</ol>
+											</li>
+										</ol>
+									</header>
+
+									<!-- <span class="image main"><img src="images/pic11.jpg" alt="" /></span> -->
+
+									<hr class="major" />
+
+									<ol>
+										<li>
+											<ol><h2 id="qlikview">QLIKVIEW</h2>
+												<li><h3 id="qlikcreerapp">Créer une application</h3></li>
+												<ol>
+													<li><h4 id="qlikarborescence">Arborescence des dossiers</h4></li>
+														<p>Attention aux noms donnés aux différents dossiers et fichiers de l'application :</p>
+														<ul>
+															<li>Il ne faut pas d'espace</li>
+															<li>Il ne faut pas d'accent</li>
+														</ul>
+														<ul>
+															<li>Dossier maître : nomApplication</li>
+															<ul>
+																<li>Sous-dossier avec l'application : apps</li>
+																<li>Sous-dossier avec les données : dataFiles</li>
+																<li>Sous-dossier avec les scripts : include</li>
+															</ul>
+														</ul>
+													<li><h4 id="qlikappli">Création de l'application</h4></li>
+														<div class="row">
+															<div class="col-6 col-12-small">
+																<span class="image fit"><img src="images/qlik1.png" alt="" /></span>
+															</div>
+															<div class="col-6 col-12-small">
+																<span class="image fit"><img src="images/qlik2.png" alt="" /></span>
+																<ul><li>Cliquer sur l'icone "Nouveau"</li></ul>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-6 col-12-small">
+																<span class="image fit"><img src="images/qlik3.png" alt="" /></span>
+															</div>
+															<div class="col-6 col-12-small">
+																<ul>
+																	<li>Fermer la fenêtre "Assistant Mise en route"</li>
+																	<li>Enregistrer le document (CTRL+S) dans le sous-dossier "apps"</li>
+																</ul>
+																<p>Le fichier sera enregistré sous le format .qvw.</p>
+															</div>
+														</div>
+												</ol>
+												<li><h3 id="qlikchargerbase">Charger une base</h3></li>
+												<ol>
+													<li><h4 id="qlikediteur">L'éditeur de script et son interface d'importation</h4></li>
+														<span class="image fit"><img src="images/qlik4.png" alt="" /></span>
+														<ul><li>Ouvrir l'éditeur de script (CTRL+E)</li></ul>
+														<div class="row">
+															<div class="col-6 col-12-small">
+																<span class="image fit"><img src="images/qlik5.png" alt="" /></span>
+															</div>
+															<div class="col-6 col-12-small">
+																<ul>
+																	<li>Créer un nouvel onglet :</li>
+																	<ul>
+																		<li>Onglet</li>
+																		<li>Ajouter un onglet...</li>
+																		<li>Donner un nom cohérent à l'objet</li>
+																	</ul>
+																</ul>
+																<p>Pour chaque action que nous souhaitons réaliser, nous allons créer un nouvel onglet.</p>
+															</div>
+														</div>
+													<li><h4 id="qlikvisionneur">Le visionneur de table</h4></li>
+														<div class="row">
+															<div class="col-6 col-12-small">
+																<span class="image fit"><img src="images/qlik6.png" alt="" /></span>
+																<ul>
+																	<li>Importer le jeu de données :</li>
+																	<ul>
+																		<li>Fichiers de tables...</li>
+																		<li>Sélectionner le fichier de données</li>
+																	</ul>
+																</ul>
+															</div>
+															<div class="col-6 col-12-small">
+																<span class="image fit"><img src="images/qlik7.png" alt="" /></span>
+																<ul>
+																	<li>Vérifier si les paramètres d'importation sont corrects</li>
+																	<li>Supprimer les colonnes inutiles</li>
+																	<ul>
+																		<li>Terminer</li>
+																	</ul>
+																</ul>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-6 col-12-small">
+																<span class="image fit"><img src="images/qlik8.png" alt="" /></span>
+															</div>
+															<div class="col-6 col-12-small">
+																<ul>
+																	<li>Le code d'imporation est généré automatiquement</li>
+																	<ul>
+																		<li>Ok</li>
+																	</ul>
+																</ul>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-6 col-12-small">
+																<span class="image fit"><img src="images/qlik9.png" alt="" /></span>
+																<span class="image fit"><img src="images/qlik10.png" alt="" /></span>
+															</div>
+															<div class="col-6 col-12-small">
+																<ul>
+																	<li>Exécuter les scripts</li>
+																	<ul>
+																		<li>Recharger</li>
+																	</ul>
+																	<li>Attendre que le rechargement se fasse, s'il n'y a pas d'erreur, a fenêtre va se fermer toute seule</li>
+																</ul>
+															</div>
+														</div>
+												</ol>
+												<li><h3 id="qlikcreerobjet">Créer un objet</h3></li>
+												<ol>
+													<li><h4 id="qlikobjets">Objets texte, image et graphique</h4></li>
+													<li><h4 id="qlikvisionneur">Faire un comptage : connaître SQL</h4></li>
+													<li><h4 id="qlikfiltrer">Filtrer les données</h4></li>
+														<ol>
+															<li><h5 id="qlikselection">Les listes de sélection</h5></li>
+															<li><h5 id="qliknomobj">Nom de l'objet</h5></li>
+															<li><h5 id="qlikconteneur">Conteneur</h5></li>
+														</ol>
+												</ol>
+											</ol>
+										</li>
+										<hr class="major" />
+										<li>
+											<ol><h2 id="autre">AUTRE?</h2>
+												<li><h3 id="autre"></h3></li>
+											</ol>
+										</li>
+									</ol>
+
+								</section>
+
+						</div>
+					</div>
+
+					<!-- Sidebar -->
+						<div id="sidebar">
+							<div class="inner">
+
+								<!-- Search -->
+									<section id="search" class="alt">
+										<form method="post" action="#">
+											<input type="text" name="query" id="query" placeholder="Search" />
+										</form>
+									</section>
+
+								<!-- Menu -->
+									<nav id="menu">
+										<header class="major">
+											<h2>Menu</h2>
+										</header>
+										<ul>
+											<li><a href="index.html">Accueil</a></li>
+											<li>
+												<span class="opener">Pro</span>
+												<ul>
+													<li><a href="statistique.html"><span class="icon solid fa-signal"> - Statistique</span></a></li>
+													<li><a href="marketing.html"><span class="icon solid fa-lightbulb"> - Marketing</span></a></li>
+													<li><a href="programmation.html"><span class="icon solid fa-rocket"> - Programmation</span></a></li>
+													<li><a href="dataviz.html"><span class="icon solid fa-gem"> - Dataviz</span></a></li>
+												</ul>
+											</li>
+											<li>
+												<span class="opener">Perso</span>
+												<ul>
+													<li><a href="cuisine.html"><span class="icon solid fa-blender"> - Cuisine</span></a></li>
+													<li><a href="patisserie.html"><span class="icon solid fa-cookie-bite"> - Pâtisserie</span></a></li>
+												</ul>
+											</li>
+										</ul>
+									</nav>
+
+								<!-- Footer -->
+									<footer id="footer">
+										<p class="copyright">&copy; TITEUXMA. All rights reserved.<br />Template & Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+									</footer>
+
+							</div>
+						</div>
+
+				</div>
+
+			<!-- Scroll up button -->
+				<div id="scroll_to_top">
+    			<a href="#top" class="icon solid fas fa-arrow-up"></a>
+				</div>
+
+			<!-- Scripts -->
+				<script src="assets/js/jquery.min.js"></script>
+				<script src="assets/js/browser.min.js"></script>
+				<script src="assets/js/breakpoints.min.js"></script>
+				<script src="assets/js/util.js"></script>
+				<script src="assets/js/main.js"></script>
+
+		</body>
+	</html>
